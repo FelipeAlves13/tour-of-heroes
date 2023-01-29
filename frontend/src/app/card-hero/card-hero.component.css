@@ -1,0 +1,29 @@
+.card-podium {
+  position: absolute;
+  right: 0.2rem;
+  bottom: 4rem;
+}
+
+.position {
+  position: absolute;
+  top: -2rem;
+  z-index: 1000;
+  right: 0.5rem;
+  color: #FFF;
+  text-shadow: 0 0 0.2rem #00000073;
+  font-size: 4rem;
+}
+
+.podium {
+  width: 61px;
+  background-color: var(--bg-color);
+  height: 60px;
+  position: absolute;
+  right: calc(0.2rem * var(--i));
+  top: calc(0.8rem * var(--i));
+  border-radius: 0.6rem;
+  transform-style: preserve-3d;
+  transform: skewX(312deg) rotateY(183deg) rotateX(59deg);
+  box-shadow: 0 0 0.5rem #0000004a;
+  z-index: calc(4 - var(--i));
+}

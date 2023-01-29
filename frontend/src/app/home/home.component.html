@@ -1,0 +1,16 @@
+<header class="nav-bar">
+  <p id="logo">Tour of heroes</p>
+  <nav>
+    <ul class="menu-bar">
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Heroes</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1>Top 4 de heróis</h1>
+  <section class="heroes">
+    <card-hero *ngFor="let item of [1,2,3,4]" [bgColor]="setColor((item-1))" [position]="item"></card-hero>
+  </section>
+</main>
+

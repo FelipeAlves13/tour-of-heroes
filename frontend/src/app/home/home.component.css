@@ -1,0 +1,60 @@
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+ background-color: #1588ff;
+  padding: 1rem;
+}
+
+#logo {
+  position: absolute;
+  left: 2rem;
+  font-size: 1.2rem;
+}
+
+.menu-bar {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  font-size: 0.7rem;
+}
+
+.menu-bar>li>a {
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  padding-top: 13rem;
+  width: 100%;
+  min-height: fit-content;
+
+}
+
+main>h1 {
+  padding-bottom: 2rem;
+}
+
+.heroes {
+  padding: 2rem;
+  width: 100%;
+  min-height: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  place-items: center;
+  grid-gap: 1rem;
+}
+
+card-hero {
+  background: #FFF;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  margin: 0;
+  width: 100%;
+  min-height: 8rem;
+  box-shadow: 0 0 1rem #0000003b;
+  position: relative;
+}
